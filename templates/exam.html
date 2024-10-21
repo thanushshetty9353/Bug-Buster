@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="exam-container">
+        <h1>Welcome to Your Exam</h1>
+        <p id="tabWarning" style="color:red; display:none;">Warning: Please stay on this tab!</p>
+
+        <div id="examContent">
+            <p>Your exam is in progress...</p>
+           
+            <h3>1. Who has the most runs in a single IPL season?</h3>
+            <div class="option">
+                <input type="radio" id="option1" name="q1" value="Virat Kohli">
+                <label for="option1">A. Virat Kohli</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option2" name="q1" value="David Warner">
+                <label for="option2">B. David Warner</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option3" name="q1" value="AB de Villiers">
+                <label for="option3">C. AB de Villiers</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option4" name="q1" value="Chris Gayle">
+                <label for="option4">D. Chris Gayle</label>
+            </div>
+
+            <h3>2. Which country won the 2019 ICC Cricket World Cup?</h3>
+            <div class="option">
+                <input type="radio" id="option1" name="q2" value="Australia">
+                <label for="option1">A. Australia</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option2" name="q2" value="India">
+                <label for="option2">B. India</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option3" name="q2" value="England">
+                <label for="option3">C. England</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option4" name="q2" value="New Zealand">
+                <label for="option4">D. New Zealand</label>
+            </div>
+
+            <h3>3. Who holds the record for the fastest century in ODIs?</h3>
+            <div class="option">
+                <input type="radio" id="option1" name="q3" value="AB de Villiers">
+                <label for="option1">A. AB de Villiers</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option2" name="q3" value="Corey Anderson">
+                <label for="option2">B. Corey Anderson</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option3" name="q3" value="Virat Kohli">
+                <label for="option3">C. Virat Kohli</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option4" name="q3" value="Shahid Afridi">
+                <label for="option4">D. Shahid Afridi</label>
+            </div>
+
+            <h3>4. Which bowler has the most wickets in Test cricket?</h3>
+            <div class="option">
+                <input type="radio" id="option1" name="q4" value="Shane Warne">
+                <label for="option1">A. Shane Warne</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option2" name="q4" value="Muttiah Muralitharan">
+                <label for="option2">B. Muttiah Muralitharan</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option3" name="q4" value="James Anderson">
+                <label for="option3">C. James Anderson</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option4" name="q4" value="Anil Kumble">
+                <label for="option4">D. Anil Kumble</label>
+            </div>
+
+            <h3>5. Who has hit the most sixes in international cricket?</h3>
+            <div class="option">
+                <input type="radio" id="option1" name="q5" value="Chris Gayle">
+                <label for="option1">A. Chris Gayle</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option2" name="q5" value="Rohit Sharma">
+                <label for="option2">B. Rohit Sharma</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option3" name="q5" value="MS Dhoni">
+                <label for="option3">C. MS Dhoni</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="option4" name="q5" value="AB de Villiers">
+                <label for="option4">D. AB de Villiers</label>
+            </div>
+
+            <button id="submitButton">Submit</button>
+        </div>
+
+        <p id="fullscreenWarning" style="color:red;"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proctored Exam</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="exam-container">
+        <h1>Welcome to the Exam</h1>
+        <button id="startExamBtn" disabled>Start Exam</button> <!-- Start Exam button initially disabled -->
+        <p id="warning" style="color:red;"></p>
+
+        <div class="container">
+            <video id="webcam" autoplay playsinline></video>
+            <button id="captureBtn">Capture Photo</button>
+            <p id="webcamError" style="color:red;"></p>
+            <img id="capturedImage" style="display:none;">
+
+            <input type="text" id="usn" placeholder="Enter your USN">
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
